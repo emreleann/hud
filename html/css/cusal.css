@@ -1,0 +1,165 @@
+.cusalhud-wrapper {
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    width:100%;
+    height:100vh;
+    display:none;
+    align-items:flex-end;
+    justify-content: flex-end;
+    position:relative;
+    font-family:'Heebo', sans-serif;
+    box-sizing:border-box;
+}
+
+.cusalhud {
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+    padding-top:2em;
+    left:15em;
+    width: 30em;
+    height:30em;
+    box-sizing:border-box;
+
+}
+
+.zero {
+    color: var(--bg);
+    
+}
+
+.othernum {
+    color: #f9f5f9;
+    text-shadow: 1px 0 0 black;
+}
+
+.speedval {
+    font-size:6em;
+}
+
+.cusalhudspeed-numbers {
+    display:flex;
+    position:relative;
+    top:11em;
+    left: -91.5em;
+    box-sizing:border-box;
+
+}
+
+.cusalhudspeed-numbers > div {
+    display:flex;
+    align-items:flex-end;
+}
+
+.speedval {
+    font-size:2em;
+}
+
+.speed-type {
+    position:absolute;
+    top: 3.5vh;
+    left: 1vh;
+    color: white;
+    font-size:14px;
+}
+
+.cusalhudsignals {
+    display:flex;
+    gap:.5em;
+    left: -83em;
+    position:relative;
+    top:10em;
+    box-sizing:border-box;
+
+}
+
+.cusalhudsignals > div {
+    display:flex;
+    justify-content: center;
+    gap:.5em;
+}
+
+.cusalhudsignals svg {
+    width: 2em;
+    height: 2em;
+    fill:white;
+}
+.cusalhud-fuel-container {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    left: -96.6em;
+    bottom: 10em;
+}
+
+.cusalhud-fuel-bar {  
+    width: 185%;
+    height: 185%;
+
+    
+}
+
+
+.cusalhud-fuel-bar-inside {
+    fill: none;
+    
+    stroke-width: 1;
+    box-sizing: content-box;
+    stroke-dasharray: 126; /* Yarı çember için stroke-dasharray yarıya indirildi */
+    stroke-dashoffset: 60;
+    stroke-linecap: round;
+    transition: stroke 0.3s ease; /* Animasyonlu renk geçişi */
+    transform: scale(1) scaleX(0.9) scaleY(1.12) rotate(0deg); /* Yarı çemberi sağa doğru döndürmek için dönüş eklenir */
+    transform-origin: center;
+}
+
+.cusalhudspeed-meter {
+    position:absolute;
+    left: 15em;
+    bottom: 1.5em;
+
+}
+.kmhtext {
+    position:absolute;
+    left: 15em;
+    bottom: 1.5em;
+    font-size: 2em;
+
+}
+
+
+.cusalhudspeed-meter > svg {
+    width: 300px;
+
+}
+
+.cusalhudspeed-meter > svg:first-of-type {
+
+    stroke-width:1px;
+    transform:scale(2.8) scaleX(-1);
+    transition: stroke 0.3s ease; /* Animasyonlu renk geçişi */
+    fill:none;
+    stroke-linecap:round;
+    position:relative;
+    left:-26.8em;
+    top: -2em;
+    box-sizing:content-box;
+    stroke-dasharray: 299;
+    stroke-dashoffset: 299;
+
+
+}
+
+.speedo-copy {
+    position:absolute;
+    left:0;
+    stroke: var(--bg);
+    stroke-width: 2px;
+    transform:scale(2);
+    fill:none;
+    stroke-linecap: round;
+    z-index:-1;
+}
